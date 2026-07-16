@@ -14,15 +14,13 @@ The goal of this project is to understand **how RAG actually works** before rely
 
 ## Architecture
 
-## Tech Stack
+![RAG Architecture Diagram](Architecture.png)
 
 - TypeScript
 - Node.js
 - Ollama
 - Llama 3.2 (Chat Model)
 - nomic-embed-text (Embedding Model)
-
-## Getting Started
 
 ### Prerequiste
 
@@ -38,21 +36,8 @@ ollama pull nomic-embed-text
 ollama list
 `
 
-### 1. Clone the repository
+### Getting Started
 
-```bash
-git clone <repository-url>
-cd <repository-name>
-```
-
-### 2. Install dependencies
-
-```bash
-npm install
-```
-
-### 6. Run the project
-
-```bash
-npm run start
-```
+1. Add Context and Questions in `src\config.ts`
+2. Run `npm install` to install deps.
+3. Run `npm run start` to run the RAG service.
